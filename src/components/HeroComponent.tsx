@@ -25,9 +25,10 @@ export function HeroComponent() {
                     su questo sito.
                 </p>
                 <Button className="mt-4" variant="secondary" onClick={
-                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                    // @ts-expect-error
-                    () => document.getElementById("rsvp").scrollIntoView({behavior: "smooth"})
+                    () => {
+                        const el = document.getElementById("rsvp");
+                        if (el) el.scrollIntoView({behavior: "smooth"})
+                    }
                 }>Conferma la partecipazione</Button>
             </div>
         </div>
