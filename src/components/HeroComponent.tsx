@@ -1,13 +1,9 @@
 "use client"
 
 import Image from "next/image";
-import {Button} from "@/components/ui/button";
 
 export function HeroComponent() {
-    // @ts-ignore
-    // @ts-ignore
-    // @ts-ignore
-    // @ts-ignore
+
     return (
         <div className="relative w-full h-[60vh] flex items-center justify-center bg-black">
             <Image
@@ -24,12 +20,12 @@ export function HeroComponent() {
                     a Tradate. Vi invitiamo a condividere questo giorno speciale e seguire le istruzioni presenti
                     su questo sito.
                 </p>
-                <Button className="mt-4" variant="secondary" onClick={
+                {/*<Button className="mt-4" variant="secondary" onClick={
                     () => {
                         const el = document.getElementById("rsvp");
                         if (el) el.scrollIntoView({behavior: "smooth"})
                     }
-                }>Conferma la partecipazione</Button>
+                }>Conferma la partecipazione</Button>*/}
             </div>
         </div>
     )
